@@ -26,7 +26,7 @@ body {
   background: rgb(29, 29, 29);
 }
 
-/* *******************************************CARDS***************************************** */
+/* *******************************************CARDS************************************** */
 
 .card-container {
   display: flex;
@@ -67,6 +67,7 @@ body {
   text-align: center;
   color: white;
   font-size: 18px;
+  opacity: 1;
 }
 
 .card-container .card-content {
@@ -106,6 +107,7 @@ body {
   border-radius: 22px;
   font-family: "dharma", sans-serif;
   transition: all 0.3s ease;
+  opacity: 1;
 }
 .card-container .card-content a:hover {
   transform: translateY(-10px);
@@ -115,6 +117,9 @@ body {
 }
 .card-container .card-first:hover .card1 {
   filter: blur(10px);
+}
+.card-container .card-first:hover .card1 h1 {
+  opacity: 0 !important;
 }
 .card-container .card-first:hover .card-content {
   transform: translateZ(20px) scaleY(1);
@@ -211,6 +216,9 @@ body {
 }
 .card-container .card-second:hover .card-content {
   transform: translateZ(20px) scaleY(1);
+}
+.card-container .card-second:hover .card2 h1 {
+  opacity: 0 !important;
 }
 @media only screen and (max-width: 1024px) {
   .card-container .card-second:hover .card-content {
@@ -313,6 +321,9 @@ body {
 }
 .card-container .card-third:hover .card-content3 {
   transform: translateZ(20px) scaleY(1);
+}
+.card-container .card-third:hover .card3 h1 {
+  opacity: 0 !important;
 }
 @media only screen and (max-width: 1024px) {
   .card-container .card-third:hover .card-content3 {
