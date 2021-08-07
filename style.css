@@ -73,17 +73,18 @@ body {
 .card-container .card-content {
   color: white;
   position: absolute;
-  top: 50%;
+  top: 30%;
   background: transparent;
   transform: translateZ(20px) scaleY(0);
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  /* width: 356px; */
+  width: 370px;
   padding: 1rem;
   transition: 0.5s;
   transform-origin: top;
+  /* border: 2px solid red; */
 }
 .card-container .card-content p {
   color: white;
@@ -125,13 +126,16 @@ body {
   transform: translateZ(20px) scaleY(1);
 }
 @media only screen and (max-width: 480px) {
+  .card-container .card-content {
+    width: 320px;
+  }
   .card-container .card1 {
     width: 320px;
     margin-right: 0px;
   }
 }
 @media only screen and (max-width: 350px) {
-  .card-container .card1 {
+  .card-container .card-content {
     width: 280px;
   }
 }
@@ -168,7 +172,7 @@ body {
 .card-container .card-second .card-content {
   color: white;
   position: absolute;
-  top: 50%;
+  top: 40%;
   margin-left: 50px;
   background: transparent;
   transform: translateZ(20px) scaleY(0);
@@ -222,12 +226,12 @@ body {
 }
 @media only screen and (max-width: 1024px) {
   .card-container .card-second:hover .card-content {
-    top: 50%;
+    top: 40%;
   }
 }
 @media only screen and (max-width: 480px) {
   .card-container .card-second:hover .card-content {
-    top: 50%;
+    top: 30%;
   }
   .card-container .card2 {
     width: 320px;
@@ -274,14 +278,14 @@ body {
 .card-container .card-third .card-content3 {
   color: white;
   position: absolute;
-  top: 50%;
+  top: 30%;
   background: transparent;
   transform: translateZ(20px) scaleY(0);
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  width: 356px;
+  width: 375px;
   padding: 1rem;
   transition: 0.5s;
   transform-origin: top;
@@ -327,12 +331,12 @@ body {
 }
 @media only screen and (max-width: 1024px) {
   .card-container .card-third:hover .card-content3 {
-    top: 50%;
+    top: 30%;
   }
 }
 @media only screen and (max-width: 768px) {
   .card-container .card-third:hover .card-content3 {
-    top: 50%;
+    top: 30%;
   }
 }
 @media only screen and (max-width: 480px) {
@@ -341,8 +345,9 @@ body {
   }
   .card-container .card-third .card-content3 {
     margin-left: 0;
-    top: 50% !important;
-    width: 300px;
+    top: 30% !important;
+    width: 290px;
+    /* border: 2px solid red; */
   }
 }
 /* CARD 3 ENDS */
