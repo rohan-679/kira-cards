@@ -62,6 +62,9 @@ body {
   background-repeat: no-repeat;
   margin-right: 20px;
 }
+.card-container .card-first{
+  margin-top: 30px;
+}
 .card-container .card1 h1 {
   font-family: "dharma", sans-serif;
   text-align: center;
@@ -124,6 +127,11 @@ body {
 }
 .card-container .card-first:hover .card-content {
   transform: translateZ(20px) scaleY(1);
+}
+@media only screen and (max-width: 1024px) {
+  .card-container .card-first{
+    margin-top: 0px;
+  }
 }
 @media only screen and (max-width: 480px) {
   .card-container .card-content {
@@ -268,6 +276,9 @@ body {
   background-position: center;
   background-repeat: no-repeat;
 }
+.card-container .card-third{
+  margin-top: 30px;
+}
 .card-container .card3 h1 {
   font-family: "dharma", sans-serif;
   text-align: center;
@@ -332,6 +343,9 @@ body {
 @media only screen and (max-width: 1024px) {
   .card-container .card-third:hover .card-content3 {
     top: 30%;
+  }
+  .card-container .card-third{
+    margin-top: 0px;
   }
 }
 @media only screen and (max-width: 768px) {
